@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF.EmployeeManagement.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.EmployeeManagement.UI"
+        xmlns:view="clr-namespace:WPF.EmployeeManagement.UI.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <view:NavigationView DataContext="{Binding NavigationViewModel}"/>
+        <view:EmployeeDetailView Grid.Column="1" DataContext="{Binding EmployeeDetailViewModel}"/>
+
+
+
+    </Grid>
+</Window>
