@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF.EmployeeManagement.UI.View.EmployeeInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.EmployeeManagement.UI.View"
+        mc:Ignorable="d"
+        Title="EmployeeInfo" Height="450" Width="1000">
+    <Grid>
+
+
+        <DataGrid HorizontalAlignment="Left" Width="1000">
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="First Name" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last Name" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Header="E-mail" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Header="PhoneNumber" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Header="Department" Width="*" CanUserResize="True"></DataGridTextColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Content="Add Employee" HorizontalAlignment="Left" Margin="760,389,0,0" VerticalAlignment="Top" Height="28" Width="89"/>
+        <Button Content="Delete Employee" HorizontalAlignment="Left" Margin="865,389,0,0" VerticalAlignment="Top" Height="28" Width="102"/>
+
+    </Grid>
+</Window>

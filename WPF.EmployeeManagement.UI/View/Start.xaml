@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF.EmployeeManagement.UI.View.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.EmployeeManagement.UI.View"
+        mc:Ignorable="d"
+        Title="Start" Height="450" Width="1000">
+    <Grid>
+
+
+        <Button Content="Employees" Margin="384,244,384,139" RenderTransformOrigin="1.104,0.619"/>
+        <Button Content="Meetings" Margin="384,324,384,59"/>
+        <Image Source="https://thumbs.dreamstime.com/z/meeting-office-staff-meeting-work-one-project-conclusion-contract-minimalist-style-cartoon-flat-meeting-office-147121307.jpg" Margin="186,7,186,217"/>
+    </Grid>
+</Window>

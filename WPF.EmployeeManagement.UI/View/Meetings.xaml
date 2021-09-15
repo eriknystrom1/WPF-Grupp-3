@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF.EmployeeManagement.UI.View.Meetings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.EmployeeManagement.UI.View"
+        mc:Ignorable="d"
+        Title="Meetings" Height="450" Width="1000">
+    <Grid>
+        <DataGrid>
+
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Title" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="StartDate" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="EndDate" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Employee Id" Width="80"></DataGridTextColumn>
+                <DataGridTextColumn Header="FirstName" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="LastName" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Phonuenumber" Width="150"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Content="Add Employee" HorizontalAlignment="Left" Margin="736,382,0,0" VerticalAlignment="Top" Height="28" Width="89"/>
+        <Button Content="Delete Employee" HorizontalAlignment="Left" Margin="842,382,0,0" VerticalAlignment="Top" Height="28" Width="102"/>
+        <Button Content="Create Meeting" HorizontalAlignment="Left" Margin="27,382,0,0" VerticalAlignment="Top" Height="28" Width="89"/>
+        <Button Content="Delete Meeting" HorizontalAlignment="Left" Margin="150,382,0,0" VerticalAlignment="Top" Height="28" Width="102"/>
+    </Grid>
+</Window>
